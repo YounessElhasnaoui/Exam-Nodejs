@@ -1,0 +1,53 @@
+{
+   "jokes": [
+      {
+         "id": 2,
+         "author": "Mehdi",
+         "joke": "heyhhhhh",
+         "likeCount": 0
+      },
+      {
+         "id": 3,
+         "author": "Mehdi",
+         "joke": "heyhhhhh",
+         "likeCount": 3
+      },
+      {
+         "id": 4,
+         "author": "Mehdi",
+         "joke": "heyhhhhh",
+         "likeCount": 0
+      },
+      {
+         "id": 5,
+         "author": "t",
+         "joke": "heyhhhhh",
+         "likeCount": 0
+      },
+      {
+         "id": 6,
+         "author": "t",
+         "joke": "jhdkjsd",
+         "likeCount": 0
+      },
+      {
+         "id": 7,
+         "author": "Mehdi2",
+         "joke": "heyhhhhh",
+         "likeCount": 1
+      },
+      {
+         "id": 8,
+         "author": "Mehdi2",
+         "joke": "heyhhhhh",
+         "likeCount": 0
+      },
+      {
+         "id": 9,
+         "author": "skfhsdkjf",
+         "joke": "sksdkdf",
+         "likeCount": 0
+      }
+   ],
+   "jid": 10
+}

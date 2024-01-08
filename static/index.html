@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam uemf 2023 - node js & vanilla js</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            exam estf 2023/2024 - node js & vanilla js
+        </h1>
+    </header>
+    <main>
+        <article>
+            <h2>
+                New Joke:
+            </h2>
+            <div class="form">
+                <input placeholder="author" id="authorInput">
+                <span class="errorInput" id="errorAuthor"> autho is required</span>
+                <textarea cols="30" rows="5" placeholder="Joke" id="jokeInput"></textarea>
+                <span class="errorInput" id="errorJoke"> Joke is required and must be at least 5 caracters</span>
+
+                <div class="controls">
+                    <button class="reset" id="resetBtn">reset</button>
+                    <button id="generateBtn" class="generate" >generate</button>
+                    <button class="submit" id="submitBtn">submit</button>
+                </div>
+            </div>
+            <div> le button 'generate' va recuperer une blague aleatoire depuis <a target="_blank"
+                    href="https://api.chucknorris.io/jokes/random"> link</a> et remplir le formulaire automatiquement</div>
+        </article>
+        <article>
+            <h2>
+                Jokes (<span id="jokesCount">1</span>)
+            </h2>
+            <ul class="jokesList", id="jokesList">
+                <li>
+                    <div class="likes">
+                        12 likes
+                    </div>
+                  
+                    
+                    <div class="content">
+                        <h3>Mehdi Tmimi</h3>
+                        <p>Que demande un footballeur à son coiffeur ? La coupe du monde s'il vous plait</p>
+                    </div>
+                    <div class="btns">
+                        <button class="delete">delete</button>
+                        <button class="likeBtn">like</button>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="likes">
+                        12 likes
+                    </div>
+                  
+                    
+                    <div class="content">
+                        <h3>Mehdi Tmimi</h3>
+                        <p>Que demande un footballeur à son coiffeur ? La coupe du monde s'il vous plait</p>
+                    </div>
+                    <div class="btns">
+                        <button class="delete">delete</button>
+                        <button class="likeBtn">like</button>
+                    </div>
+
+                </li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        @estf-2023
+    </footer>
+</body>
+
+</html>
