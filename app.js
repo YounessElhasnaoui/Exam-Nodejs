@@ -20,7 +20,7 @@ app.get("/jokes", (req, res) => {
 });
 
 app.post("/jokes", middlewareVerification, (req, res) => {
-    let {author, joke} = req.body
+    let { author, joke } = req.body
 
     fs.readFile("./database/jokes.json", (err, data) => {
         if (err)
@@ -44,10 +44,9 @@ app.post("/jokes", middlewareVerification, (req, res) => {
         fs.writeFile("./database/jokes.json", JSON.stringify(dataFile, null, 3), (err) => {
             if (err)
                 return res.status(500).json({ status: "error", msg: "Something went wrong" })
-            res.status(200).json({ status: "success", msg: "joke is added with success", joke: newJoke})
+            res.status(200).json({ status: "success", msg: "joke is added with success", joke: newJoke })
         });
     });
-
 });
 
 app.delete("/jokes/:id", (req, res) => {
@@ -74,16 +73,14 @@ app.delete("/jokes/:id", (req, res) => {
 
             res.status(200).json({ status: "success", msg: "joke is deleted with success", joke: joke })
         });
-    }
-    );
-
+    });
 });
 
 app.put("/jokes/:id", middlewareVerification, (req, res) => {
     let id = parseInt(req.params.id);
     let { author, joke, likeCount, click } = req.body
 
-    if(click != "like")
+    if (click != "like")
         return res.status(400).json({ status: "error", msg: "click must be like" })
 
     fs.readFile("./database/jokes.json", (err, data) => {
@@ -97,7 +94,7 @@ app.put("/jokes/:id", middlewareVerification, (req, res) => {
         if (!jokeToLike)
             return res.status(404).json({ status: "error", msg: "task not found" })
 
-        if(jokeToLike.author != author || jokeToLike.joke != joke || jokeToLike.likeCount != likeCount)
+        if (jokeToLike.author != author || jokeToLike.joke != joke || jokeToLike.likeCount != likeCount)
             return res.status(400).json({ status: "error", msg: "author, joke and likeCount must be the same" })
 
         jokeToLike.author = author;
@@ -108,13 +105,13 @@ app.put("/jokes/:id", middlewareVerification, (req, res) => {
         fs.writeFile("./database/jokes.json", JSON.stringify(dataFile, null, 3), (err) => {
             if (err)
                 return res.status(500).json({ status: "error", msg: "Something went wrong" })
+
             res.status(200).json({ status: "success", msg: "joke is liked with success", joke: jokeToLike })
         });
-    }
-    );
+    });
 });
 
-app.use("/*", (req, res) => {
+app.use("*", (req, res) => {
     res.status(404).json({ status: "error", message: "Page not found" });
 });
 

@@ -1,53 +1,23 @@
 {
    "jokes": [
       {
-         "id": 2,
-         "author": "Mehdi",
-         "joke": "heyhhhhh",
+         "id": 20,
+         "author": "youness",
+         "joke": "Recent testimonials from women worldwide have equated Chuck Norris' to that of a rivet gun.",
          "likeCount": 0
       },
       {
-         "id": 3,
-         "author": "Mehdi",
-         "joke": "heyhhhhh",
-         "likeCount": 3
-      },
-      {
-         "id": 4,
-         "author": "Mehdi",
-         "joke": "heyhhhhh",
+         "id": 21,
+         "author": "ahmed",
+         "joke": "Chuck Norris once beat the entire New York jets football team by himself. And every play he ran was a punt!",
          "likeCount": 0
       },
       {
-         "id": 5,
-         "author": "t",
-         "joke": "heyhhhhh",
-         "likeCount": 0
-      },
-      {
-         "id": 6,
-         "author": "t",
-         "joke": "jhdkjsd",
-         "likeCount": 0
-      },
-      {
-         "id": 7,
-         "author": "Mehdi2",
-         "joke": "heyhhhhh",
-         "likeCount": 1
-      },
-      {
-         "id": 8,
-         "author": "Mehdi2",
-         "joke": "heyhhhhh",
-         "likeCount": 0
-      },
-      {
-         "id": 9,
-         "author": "skfhsdkjf",
-         "joke": "sksdkdf",
+         "id": 22,
+         "author": "yassine",
+         "joke": "The Sun is Chuck Norris' Snuggie",
          "likeCount": 0
       }
    ],
-   "jid": 10
+   "jid": 23
 }
